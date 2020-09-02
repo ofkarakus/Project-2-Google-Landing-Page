@@ -1,0 +1,251 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+header #header-left a, header #header-right a {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+header #header-left a:link, header #header-left a:visited, header #header-right a:link, header #header-right a:visited {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #333333;
+}
+
+header #header-left a:hover, header #header-right a:hover {
+  text-decoration: underline;
+}
+
+header #header-left {
+  padding-top: 0.35rem;
+  float: left;
+}
+
+header #header-left * {
+  margin-left: 1rem;
+}
+
+header #header-right {
+  float: right;
+}
+
+header #header-right * {
+  margin-right: 1rem;
+}
+
+header #header-right img {
+  opacity: 0.5;
+  vertical-align: middle;
+}
+
+header #header-right img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+header #header-right #signin {
+  border: hidden solid 1px;
+  background-color: #4285F4;
+  color: white;
+  width: 10rem;
+  padding: 0.5rem 0.9rem;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0.3rem;
+}
+
+main {
+  margin-top: 7.8%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+main #logo {
+  width: 16rem auto;
+  padding-bottom: 1rem;
+}
+
+main #searchbar {
+  width: 37rem;
+  height: 2.7rem;
+  border-radius: 2rem;
+  border: 1px solid #DADADB;
+  padding: 1rem;
+  text-indent: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+main #searchbar:hover {
+  -webkit-box-shadow: 3px 3px 3px lightgray;
+          box-shadow: 3px 3px 3px lightgray;
+  cursor: text;
+}
+
+main #searchbar:focus {
+  outline: none;
+}
+
+main #div-searchbar {
+  margin-top: 0.5rem;
+}
+
+main #searchicon {
+  position: relative;
+  bottom: 2.05rem;
+  right: 16rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+main #mic-icon {
+  position: relative;
+  width: 0.8rem;
+  height: 1.2rem;
+  bottom: 2.2rem;
+  left: 16rem;
+}
+
+main #mic-icon:hover {
+  cursor: pointer;
+}
+
+main #buttons {
+  padding-top: 1rem;
+  padding-bottom: 2.7rem;
+}
+
+main #btn1, main #btn2 {
+  border: hidden solid;
+  background-color: #F2F2F2;
+  padding: 0.7rem 1rem;
+  font-size: 90%;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  color: grey;
+}
+
+main #btn1 {
+  margin-right: 0.5rem;
+}
+
+main #btn1:hover, main #btn2:hover {
+  color: black;
+  -webkit-box-shadow: 0.5px 0.5px 0.5px lightgray;
+          box-shadow: 0.5px 0.5px 0.5px lightgray;
+  border: solid 1px lightgray;
+}
+
+main #description {
+  font-size: 0.8rem;
+}
+
+main #language:link, main #language:visited {
+  color: #1A0DAB;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #F2F2F2;
+  padding-left: 1.5rem;
+}
+
+footer #location {
+  padding: 0.8rem;
+  padding-left: 0;
+  text-align: left;
+  border-bottom: solid 1px lightgray;
+  color: grey;
+  font-size: 15px;
+}
+
+footer #left-bottom {
+  float: left;
+  padding: 0.9rem 0.9rem 0.9rem 0rem;
+  font-size: 14px;
+}
+
+footer #left-bottom * {
+  padding-right: 1.5rem;
+}
+
+footer #right-bottom {
+  float: right;
+  padding: 0.9rem 4rem 0.9rem 0.9rem;
+  font-size: 14px;
+}
+
+footer #right-bottom * {
+  padding-left: 1.5rem;
+}
+
+footer a:link {
+  text-decoration: none;
+  color: lightgray;
+}
+
+footer a:hover {
+  -webkit-text-decoration-style: underline;
+          text-decoration-style: underline;
+}
+
+footer a:visited {
+  color: grey;
+}
+/*# sourceMappingURL=style.css.map */

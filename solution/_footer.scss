@@ -1,0 +1,47 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding-left: 1.5rem;
+
+    #location {
+        padding: 0.8rem;
+        padding-left: 0;
+        text-align: left;
+        border-bottom: solid 1px lightgray;
+        color: grey;
+        font-size: 15px;
+    }
+
+    #left-bottom {
+        float: left;
+        padding: 0.9rem 0.9rem 0.9rem 0rem;
+        font-size: 14px;
+        * {
+            padding-right: 1.5rem;
+        }
+    }
+
+    #right-bottom {
+        float: right;
+        padding: 0.9rem 4rem 0.9rem 0.9rem;
+        font-size: 14px;
+        * {
+            padding-left: 1.5rem;
+        }
+    }
+
+    a:link {
+        text-decoration: none;
+        color: lightgray;
+    }
+
+    a:hover {
+        text-decoration-style: underline;
+    }
+
+    a:visited {
+        color: grey;
+    }
+}
