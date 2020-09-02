@@ -10,7 +10,7 @@ footer {
         padding-left: 0;
         text-align: left;
         border-bottom: solid 1px lightgray;
-        color: grey;
+        color: rgba(0, 0, 0, 0.54);
         font-size: 15px;
     }
 
@@ -34,7 +34,7 @@ footer {
 
     a:link {
         text-decoration: none;
-        color: lightgray;
+        color: #5f6368;
     }
 
     a:hover {
@@ -42,6 +42,6 @@ footer {
     }
 
     a:visited {
-        color: grey;
+        color: #5f6368;
     }
 }
