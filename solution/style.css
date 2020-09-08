@@ -18,6 +18,8 @@ time, mark, audio, video {
   font: inherit;
   font-family: Arial, Helvetica, sans-serif;
   vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -88,6 +90,7 @@ header #header-right * {
 header #header-right img {
   opacity: 0.5;
   vertical-align: middle;
+  margin-right: 0;
 }
 
 header #header-right img:hover {
@@ -106,6 +109,11 @@ header #header-right #signin {
   border-radius: 0.3rem;
 }
 
+header #header-right #signin:active {
+  -webkit-box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+
 main {
   margin-top: 7.8%;
   text-align: center;
@@ -117,7 +125,11 @@ main #logo {
   padding-bottom: 1rem;
 }
 
-main #searchbar {
+main #div-searchbar {
+  margin-top: 0.5rem;
+}
+
+main #div-searchbar #searchbar {
   width: 37rem;
   height: 2.7rem;
   border-radius: 2rem;
@@ -128,23 +140,19 @@ main #searchbar {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-}
-
-main #searchbar:hover {
-  -webkit-box-shadow: 3px 3px 3px lightgray;
-          box-shadow: 3px 3px 3px lightgray;
   cursor: text;
 }
 
-main #searchbar:focus {
+main #div-searchbar #searchbar:hover {
+  -webkit-box-shadow: 0 0 0.6rem lightgray;
+          box-shadow: 0 0 0.6rem lightgray;
+}
+
+main #div-searchbar #searchbar:focus {
   outline: none;
 }
 
-main #div-searchbar {
-  margin-top: 0.5rem;
-}
-
-main #searchicon {
+main #div-searchbar #searchicon {
   position: relative;
   bottom: 2.05rem;
   right: 16rem;
@@ -152,15 +160,12 @@ main #searchicon {
   height: 1.5rem;
 }
 
-main #mic-icon {
+main #div-searchbar #mic-icon {
   position: relative;
   width: 0.8rem;
   height: 1.2rem;
   bottom: 2.2rem;
   left: 16rem;
-}
-
-main #mic-icon:hover {
   cursor: pointer;
 }
 
@@ -169,7 +174,18 @@ main #buttons {
   padding-bottom: 2.7rem;
 }
 
-main #btn1, main #btn2 {
+main #buttons #btn1:hover, main #buttons #btn2:hover {
+  color: black;
+  -webkit-box-shadow: 0.5px 0.5px 0.5px lightgray;
+          box-shadow: 0.5px 0.5px 0.5px lightgray;
+  border: solid 1px lightgray;
+}
+
+main #buttons #btn1:active, main #buttons #btn2:active {
+  border: 1px solid #4285f4;
+}
+
+main #buttons #btn1, main #buttons #btn2 {
   border: hidden solid;
   background-color: #F2F2F2;
   padding: 0.7rem 1rem;
@@ -179,22 +195,15 @@ main #btn1, main #btn2 {
   color: grey;
 }
 
-main #btn1 {
+main #buttons #btn1 {
   margin-right: 0.5rem;
-}
-
-main #btn1:hover, main #btn2:hover {
-  color: black;
-  -webkit-box-shadow: 0.5px 0.5px 0.5px lightgray;
-          box-shadow: 0.5px 0.5px 0.5px lightgray;
-  border: solid 1px lightgray;
 }
 
 main #description {
   font-size: 0.8rem;
 }
 
-main #language:link, main #language:visited {
+main #description #language:link, main #description #language:visited {
   color: #1A0DAB;
 }
 
